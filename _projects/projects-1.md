@@ -1,7 +1,10 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Morph Neural Architecture Search Pipeline"
+excerpt: "Automated pipeline to streamline neural architecture codesign for fast unversal neural networks.
+high-energy diffraction microscopy.<br/><img src='/images/morph_pic.png'>"
 collection: projects
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+We create a plug-and-play pipeline **Morph** that uses block based layers of a network to run Neural Architecture Search to find the optimal model for a given task. Then the pipeline runs quantization and pruning and makes a Pareto curve that the user can choose based on their needs. This is specifcally tailored for CPUs and FPGAs. 
+
+This is an ongoing project and is done with [Javier Duarte](https://jduarte.physics.ucsd.edu/). We currently have one paper written about this seen [here](https://arxiv.org/pdf/2312.05978.pdf) and is described in more detail in the [Publications section](https://dimapdemler.github.io/publications/). 
