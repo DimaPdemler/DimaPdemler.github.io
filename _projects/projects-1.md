@@ -1,10 +1,9 @@
 ---
-title: "Morph Neural Architecture Search Pipeline"
-excerpt: "Automated pipeline to streamline neural architecture codesign for fast unversal neural networks.
-high-energy diffraction microscopy.<br/><img src='/images/morph_pic.png'>"
+title: "High Neutral Lepton Classification"
+excerpt: "Used transfer learning and lottery ticket hypothesis pruning to create an optimal heavy neutral lepton classification neural network. For this project I was part of the Excellence Research Internship Program at EPFL. High Neutral Lepton Classification neural network <br/><img src='/images/HNL_image.png'>"
 collection: projects
 ---
 
-We create a plug-and-play pipeline **Morph** that uses block based layers of a network to run Neural Architecture Search to find the optimal model for a given task. Then the pipeline runs quantization and pruning and makes a Pareto curve that the user can choose based on their needs. This is specifcally tailored for CPUs and FPGAs. 
+I created a heavy neutral lepton (HNL) classification network that takes in 4-momentum and energy values of particle pairs to identify if an event contains an HNL or is a different collision. To do this, I first made a multivariate regression model that can calculate diffrent important kinematic values of the particle pairs. The benefit of this approach that while we have limited real data, we could have infinite kinematic value data to train on. After we found a good enough model, I then used transfer learning to train this model (with more layers) to run signal classification for HNL. More info on this can be seen in the [Github Repository](https://github.com/DimaPdemler/HNLclassifier) and the [final presentation slideshow](https://github.com/DimaPdemler/DimaPdemler.github.io/tree/master/files/HNLclassifier_presentation.pdf). 
 
-This is an ongoing project and is done with [Javier Duarte](https://jduarte.physics.ucsd.edu/). We currently have one paper written about this seen [here](https://arxiv.org/pdf/2312.05978.pdf) and is described in more detail in the [Publications section](https://dimapdemler.github.io/publications/). 
+This was done during the summer of 2023 where I was part of [Excellence Research Internship Program](https://www.epfl.ch/education/international/en/coming-to-epfl/research-internships/). I worked on this for [Lesya Shchutska](https://people.epfl.ch/lesya.shchutska/?lang=en) and under supervision of [Konstantin Androsov](https://people.epfl.ch/konstantin.androsov?lang=en). 
