@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Dima Demler Site"
 title_separator          : "-"
 name                     : &name "Dmitri Demler"
 description              : &description "Welcome to my personal website!"
