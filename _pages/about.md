@@ -8,8 +8,17 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year undergraduate studying computational physics at University of California San Diego. I am interested in the intersection of physics and machine learning with a strong background in both computer science and mathematics. Previously I have worked extensively in high energy physics with [Javier Duarte](https://jduarte.physics.ucsd.edu/) and [Lesya Shchutska](https://people.epfl.ch/lesya.shchutska/?lang=en). I have also experience in condensed matter physics working with [Yiwen Chu](https://hyqu.ethz.ch/). 
+I am a third-year undergraduate studying computational physics at University of California San Diego. I am interested in the intersection of physics and machine learning with a strong background in both computer science and mathematics. Previously I have worked extensively in high energy physics with [Javier Duarte](https://jduarte.physics.ucsd.edu/) and [Lesya Shchutska](https://people.epfl.ch/lesya.shchutska/?lang=en). I have also experience in condensed matter physics working with [Yiwen Chu](https://hyqu.ethz.ch/).
 
+Since before I can remember I have been fascinated with puzzles, first it was rearranging match stick numbers to get the highest value to now finding simple(ish) mathematical representations of incredibly complicated systems. My current puzzle is machine learning, specifically how we can use mathematical and physical constraints to improve the seemingly black box that is this subject. I have primarily worked with high energy physics where one needs to combine modern ML techniques with physical constraints that are set by the limits of the experiment and the motion of the particles. 
+
+My first taste of machine learning was in 2020 at [MIT Beaverwork](https://beaverworks.ll.mit.edu/CMS/bw/bwsi) where I dove deep into image classification and Travelling Salesmen problems using ML. Since then my interest has only grown and have worked with physics-informed and normal dense networks, autoencoders, convolutional transformers, lottery ticket hypothesis pruning and transfer learning for tasks such as computer vision and high energy physics.
+
+- To read more about my projects that I have completed (or are ongoing) please go to the [projects tab](https://dimapdemler.github.io/projects/).
+- For my publications go to the [publications tab](https://dimapdemler.github.io/publications/). 
+
+
+<!-- 
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website
@@ -49,4 +58,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
