@@ -10,4 +10,4 @@ Our experiments revealed that a Convolutional Neural Network (CNN) architecture 
 
 We implemented reward augmentations such as grass detection, speed, and acceleration to incentivize the agent to stay on the track, maintain high speeds, and accelerate efficiently. Through careful tuning of scaling factors, we achieved a balance between these augmentations and the baseline rewards, ensuring the agent prioritized both safe racing lines and high velocities.
 
-This project was completed as part of the CSE 251B course at UCSD during the Winter 2024 quarter.
+This project was completed as part of the CSE 251B course at UCSD during the Winter 2024 quarter. The pdf can be accesed [here](https://dimapdemler.github.io/files/CSE_251B_Final_Project_Project.pdf) and the slideshow presentation with video examples of the car racing can be accessed [here](https://docs.google.com/presentation/d/1YEaGoZ3cp6BxNUZlnJlXEICEvybqQQN9glTS4dv-b2U/edit?usp=sharing).
