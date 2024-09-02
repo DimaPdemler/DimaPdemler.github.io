@@ -15,7 +15,7 @@ My primary responsibility was to design and implement a stabilization system to 
 
 ### Design and Development
 - **Differential Equations:** I utilized my understanding of physics to derive a system of differential equations, focusing on amplitude attenuation in various systems. This theoretical framework was crucial for developing a viable solution.
-  - [Differential Equations for Natural Frequencies](https://github.com/DimaPdemler/DimaPdemler.github.io/blob/master/files/E22%20calculations.pdf)
+  - [Differential Equations for Natural Frequencies](https://dimapdemler.github.io/files/E22calculations2.pdf)
 - **Modeling in COMSOL Multiphysics:** To validate my calculations and theoretical models, I employed COMSOL Multiphysics software. This step was instrumental in refining the models and ensuring their practical applicability.
 - **Optimal System Design:** The best model incorporated a combination of pendulums, springs, and eddy current dampers. This design was a result of extensive research and iterations.
 
