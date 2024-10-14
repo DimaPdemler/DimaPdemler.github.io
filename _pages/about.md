@@ -8,11 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year undergraduate studying computational physics at University of California San Diego. I am interested in the intersection of physics and machine learning with a strong background in both computer science and mathematics. Previously I have worked extensively in high energy physics with [Javier Duarte](https://jduarte.physics.ucsd.edu/) and [Lesya Shchutska](https://people.epfl.ch/lesya.shchutska/?lang=en). I have also experience in condensed matter physics working with [Yiwen Chu](https://hyqu.ethz.ch/).
+I am a fourth-year undergraduate studying computational physics at University of California San Diego. I am interested in the intersection of physics and machine learning with a strong background in both computer science and mathematics. Specifically, I focus on fast and efficient machine learning, optimizing neural networks for nanosecond timescales using FPGAs.
 
-Since before I can remember I have been fascinated with puzzles, first it was rearranging match stick numbers to get the highest value to now finding simple(ish) mathematical representations of incredibly complicated physical systems. My current puzzle is machine learning, specifically how we can use mathematical and physical constraints to improve the seemingly black box that is this subject. I have primarily worked with high energy physics where one needs to combine modern ML techniques with physical constraints that are set by the limits of the experiment and the motion of the particles. 
+For the past two years I have worked with [Javier Duarte](https://jduarte.physics.ucsd.edu/) on Fast ML. I have also worked with [Lesya Shchutska](https://people.epfl.ch/lesya.shchutska/?lang=en) in high energy physics and [Yiwen Chu](https://hyqu.ethz.ch/) in condensed matter physics. 
 
-My first taste of machine learning was in 2020 at [MIT Beaverwork](https://beaverworks.ll.mit.edu/CMS/bw/bwsi) where I dove deep into image classification and Travelling Salesmen problems using ML. Since then my interest has only grown and have worked with physics-informed and normal dense networks, autoencoders, convolutional transformers, lottery ticket hypothesis pruning and transfer learning for tasks such as computer vision and high energy physics.
 
 - To read more about my projects that I have completed (or are ongoing) please go to the [projects tab](https://dimapdemler.github.io/projects/).
 - For my publications go to the [publications tab](https://dimapdemler.github.io/publications/). 
