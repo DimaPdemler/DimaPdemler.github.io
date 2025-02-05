@@ -2,7 +2,7 @@
 title: "Neural Architecture Codesign for Fast Bragg Peak Analysis"
 collection: publications
 permalink: /publication/NAS-bragg
-excerpt: 'This paper presents a new neural architecture search pipeline for compute aware models'
+excerpt: 'This paper presents a new hardware aware neural architecture search pipeline for Bragg Peak Spectroscopy experiments'
 date: 2024-2-13
 venue: '2nd Annual AAAI Workshop on AI to Accelerate Science and Engineering'
 paperurl: 'https://arxiv.org/abs/2312.05978'

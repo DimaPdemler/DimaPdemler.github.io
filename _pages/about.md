@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year undergraduate studying computational physics at University of California San Diego. I am interested in the intersection of physics and machine learning with a strong background in both computer science and mathematics. Specifically, I focus on fast and efficient machine learning, optimizing neural networks for nanosecond timescales using FPGAs.
+I am a fourth-year undergraduate studying computational physics at the University of California, San Diego, with a strong interest in the intersection of physics and machine learning. My goal is to develop efficient machine learning models deeply rooted in the underlying physical and mathematical principles that govern our world.
 
-For the past two years I have worked with [Javier Duarte](https://jduarte.physics.ucsd.edu/) on Fast ML. I have also worked with [Lesya Shchutska](https://people.epfl.ch/lesya.shchutska/?lang=en) in high energy physics and [Yiwen Chu](https://hyqu.ethz.ch/) in condensed matter physics. 
+Over the past two years, I have worked with Professor [Javier Duarte](https://jduarte.physics.ucsd.edu/) on fast and efficient machine learning, focusing on optimizing neural networks for nanosecond timescales using FPGAs. Our work involves creating a Neural Architecture Codesign (NAC) pipeline that automates the discovery and optimization of efficient machine learning models for scientific and engineering applications. By breaking down complex problems into their fundamental components, we aim to develop elegant and interpretable solutions.
 
+I have also had the opportunity to work with Professor [Lesya Shchutska](https://people.epfl.ch/lesya.shchutska/?lang=en) at EPFL on demonstrating the existence of heavy neutral leptons using machine learning techniques, and with Professor [Yiwen Chu](https://hyqu.ethz.ch/) at ETH Zurich on designing a vibration damping system for a cryo fridge. These experiences have reinforced my belief in the power of incorporating fundamental principles to create better solutions.
 
-- To read more about my projects that I have completed (or are ongoing) please go to the [projects tab](https://dimapdemler.github.io/projects/).
-- For my publications go to the [publications tab](https://dimapdemler.github.io/publications/). 
+My philosophy is that by understanding and leveraging the underlying physics and mathematics, we can develop machine learning models that provide meaningful insights and push the boundaries of scientific discovery. I am excited to continue pursuing this approach in my future research endeavors.
 
 
 <!-- 
