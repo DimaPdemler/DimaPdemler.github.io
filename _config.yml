@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Dima Demler Site"
+title                    : "Dima Demlers Site"
 title_separator          : "-"
 name                     : &name "Dmitri Demler"
 description              : &description "Welcome to my personal website!"
@@ -83,7 +83,7 @@ author:
   name             : "Dmitri Demler"
   avatar           : "portrait2.png"
   bio              : "Fourth Year Computatonal Physics major at UCSD"
-  location         : "San Diego | Zürich | Boston"
+  location         : "Zürich "
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=BRW8uYsAAAAJ&hl=en"
