@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convex Function Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-800 flex flex-col items-center">
+    
+    <div class="max-w-5xl w-full bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+        
+        <!-- Left Column: Text & Controls -->
+        <div class="w-full md:w-1/3 p-6 md:p-8 bg-slate-100 border-r border-slate-200 flex flex-col gap-6">
+            <div>
+                <h2 class="text-xl font-bold mb-2 text-slate-900">2. Convex Functions</h2>
+                <p class="text-sm mb-4 leading-relaxed">
+                    A function <span class="font-serif italic">f: K → ℝ</span> is convex if, for all <span class="font-serif italic">x, y ∈ K</span> and <span class="font-serif italic">λ ∈ [0,1]</span>, the inequality holds:
+                </p>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 text-center font-serif text-sm font-semibold text-blue-700">
+                    f(λx + (1-λ)y) ≤ λf(x) + (1-λ)f(y)
+                </div>
+            </div>
+
+            <div class="space-y-5">
+                <div>
+                    <label class="flex justify-between text-sm font-semibold mb-1">
+                        <span>Point <span class="font-serif italic">x</span></span>
+                        <span class="text-slate-500" id="ptX-display">-1.50</span>
+                    </label>
+                    <input 
+                        type="range" id="ptX" min="-2.8" max="2.0" step="0.1" value="-1.5"
+                        class="w-full accent-blue-600"
+                    />
+                </div>
+                
+                <div>
+                    <label class="flex justify-between text-sm font-semibold mb-1">
+                        <span>Point <span class="font-serif italic">y</span></span>
+                        <span class="text-slate-500" id="ptY-display">2.20</span>
+                    </label>
+                    <input 
+                        type="range" id="ptY" min="-1.3" max="2.8" step="0.1" value="2.2"
+                        class="w-full accent-blue-600"
+                    />
+                </div>
+
+                <div class="pt-2 border-t border-slate-300">
+                    <label class="flex justify-between text-sm font-semibold mb-1">
+                        <span>Weight <span class="font-serif italic text-emerald-600">λ</span></span>
+                        <span class="text-emerald-600" id="lambda-display">0.40</span>
+                    </label>
+                    <input 
+                        type="range" id="lambda" min="0" max="1" step="0.01" value="0.4"
+                        class="w-full accent-emerald-500"
+                    />
+                    <p class="text-xs text-slate-500 mt-2">
+                        Slide λ to move the interpolated point between x (λ=1) and y (λ=0).
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-auto pt-4 text-xs text-slate-500 space-y-2">
+                <p><strong>Left side (Curve):</strong> <span id="fOfInterp-display">0.00</span></p>
+                <p><strong>Right side (Secant):</strong> <span id="interpOfF-display">0.00</span></p>
+                <p class="font-bold text-slate-700 mt-2" id="difference-display">
+                    Difference: 0.00 ≥ 0
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Column: Visualization -->
+        <div class="w-full md:w-2/3 p-4 md:p-8 flex items-center justify-center bg-white">
+            <svg id="svg-canvas" viewBox="0 0 800 500" class="w-full h-auto drop-shadow-sm font-serif">
+                <!-- SVG content will be injected by JavaScript -->
+            </svg>
+        </div>
+    </div>
+
+    <script>
+        // State variables
+        let ptX = -1.5;
+        let ptY = 2.2;
+        let lambda = 0.4;
+
+        // Mathematical functions
+        const f = (v) => v * v;
+        const mapX = (val) => ((val + 3) / 6) * 800;
+        const mapY = (val) => 500 - ((val + 2) / 12) * 500;
+
+        // Generate the static curve path once
+        let curvePath = '';
+        for (let i = -3; i <= 3; i += 0.1) {
+            const px = mapX(i);
+            const py = mapY(f(i));
+            curvePath += i === -3 ? `M ${px} ${py} ` : `L ${px} ${py} `;
+        }
+
+        // Elements
+        const ptXInput = document.getElementById('ptX');
+        const ptYInput = document.getElementById('ptY');
+        const lambdaInput = document.getElementById('lambda');
+        
+        const ptXDisplay = document.getElementById('ptX-display');
+        const ptYDisplay = document.getElementById('ptY-display');
+        const lambdaDisplay = document.getElementById('lambda-display');
+        
+        const fOfInterpDisplay = document.getElementById('fOfInterp-display');
+        const interpOfFDisplay = document.getElementById('interpOfF-display');
+        const differenceDisplay = document.getElementById('difference-display');
+        
+        const svgCanvas = document.getElementById('svg-canvas');
+
+        // Main render function
+        function render() {
+            // Calculations
+            const interpInput = lambda * ptX + (1 - lambda) * ptY;
+            const fOfInterp = f(interpInput);
+            const interpOfF = lambda * f(ptX) + (1 - lambda) * f(ptY);
+            const difference = interpOfF - fOfInterp;
+
+            // Update Input Constraints to prevent points crossing over
+            ptXInput.max = ptY - 0.2;
+            ptYInput.min = ptX + 0.2;
+
+            // Update Text Displays
+            ptXDisplay.textContent = ptX.toFixed(2);
+            ptYDisplay.textContent = ptY.toFixed(2);
+            lambdaDisplay.textContent = lambda.toFixed(2);
+            fOfInterpDisplay.textContent = fOfInterp.toFixed(2);
+            interpOfFDisplay.textContent = interpOfF.toFixed(2);
+            differenceDisplay.innerHTML = `Difference: ${difference.toFixed(2)} &ge; 0`;
+
+            // Prepare Conditional Difference Arrow
+            let arrowSvg = '';
+            if (difference > 0.2) {
+                arrowSvg = `
+                    <g>
+                        <line 
+                            x1="${mapX(interpInput)}" y1="${mapY(fOfInterp) - 8}" 
+                            x2="${mapX(interpInput)}" y2="${mapY(interpOfF) + 8}" 
+                            stroke="#f59e0b" stroke-width="4" 
+                            marker-end="url(#arrowhead)" marker-start="url(#arrowhead-reverse)"
+                        />
+                        <text x="${mapX(interpInput) - 15}" y="${mapY((fOfInterp + interpOfF) / 2)}" fill="#f59e0b" text-anchor="end" class="text-sm font-bold">
+                            Gap &ge; 0
+                        </text>
+                    </g>
+                `;
+            }
+
+            // Construct SVG Content
+            svgCanvas.innerHTML = `
+                <!-- Grid & Axes -->
+                <line x1="0" y1="${mapY(0)}" x2="800" y2="${mapY(0)}" stroke="#cbd5e1" stroke-width="2" />
+                <line x1="${mapX(0)}" y1="0" x2="${mapX(0)}" y2="500" stroke="#cbd5e1" stroke-width="2" />
+                
+                <!-- The Convex Curve -->
+                <path d="${curvePath}" fill="none" stroke="#3b82f6" stroke-width="4" />
+                <text x="${mapX(2.5)}" y="${mapY(7.5)}" fill="#3b82f6" font-size="20" font-weight="bold">f</text>
+
+                <!-- The Secant Line -->
+                <line 
+                    x1="${mapX(ptX)}" y1="${mapY(f(ptX))}" 
+                    x2="${mapX(ptY)}" y2="${mapY(f(ptY))}" 
+                    stroke="#ef4444" stroke-width="3" stroke-dasharray="6 4" 
+                />
+
+                <!-- Connecting lines for X and Y -->
+                <line x1="${mapX(ptX)}" y1="${mapY(0)}" x2="${mapX(ptX)}" y2="${mapY(f(ptX))}" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 4" />
+                <line x1="${mapX(ptY)}" y1="${mapY(0)}" x2="${mapX(ptY)}" y2="${mapY(f(ptY))}" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 4" />
+
+                <!-- Base points X and Y -->
+                <circle cx="${mapX(ptX)}" cy="${mapY(0)}" r="6" fill="#0f172a" />
+                <text x="${mapX(ptX) - 5}" y="${mapY(-0.5)}" fill="#0f172a" font-size="18" font-style="italic">x</text>
+                <circle cx="${mapX(ptY)}" cy="${mapY(0)}" r="6" fill="#0f172a" />
+                <text x="${mapX(ptY) - 5}" y="${mapY(-0.5)}" fill="#0f172a" font-size="18" font-style="italic">y</text>
+
+                <!-- Interpolated Point -->
+                <line x1="${mapX(interpInput)}" y1="${mapY(0)}" x2="${mapX(interpInput)}" y2="${mapY(interpOfF)}" stroke="#10b981" stroke-width="2" stroke-dasharray="4 4" />
+                <circle cx="${mapX(interpInput)}" cy="${mapY(0)}" r="6" fill="#10b981" />
+                <text x="${mapX(interpInput) - 35}" y="${mapY(-0.8)}" fill="#10b981" font-size="16" font-style="italic">λx+(1-λ)y</text>
+
+                <!-- Function Evaluated Point -->
+                <circle cx="${mapX(interpInput)}" cy="${mapY(fOfInterp)}" r="7" fill="#3b82f6" stroke="white" stroke-width="2" />
+                <text x="${mapX(interpInput) + 15}" y="${mapY(fOfInterp) + 5}" fill="#3b82f6" font-size="16" font-style="italic">f(λx+(1-λ)y)</text>
+
+                <!-- Secant Evaluated Point -->
+                <circle cx="${mapX(interpInput)}" cy="${mapY(interpOfF)}" r="7" fill="#ef4444" stroke="white" stroke-width="2" />
+                <text x="${mapX(interpInput) - 145}" y="${mapY(interpOfF) - 10}" fill="#ef4444" font-size="16" font-style="italic">λf(x)+(1-λ)f(y)</text>
+
+                ${arrowSvg}
+
+                <!-- Arrowhead Definitions -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b" />
+                    </marker>
+                    <marker id="arrowhead-reverse" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto">
+                        <polygon points="10 0, 0 3.5, 10 7" fill="#f59e0b" />
+                    </marker>
+                </defs>
+
+                <!-- Points on the curve for x and y -->
+                <circle cx="${mapX(ptX)}" cy="${mapY(f(ptX))}" r="5" fill="#ef4444" />
+                <text x="${mapX(ptX) - 40}" y="${mapY(f(ptX)) - 10}" fill="#64748b" font-size="14" font-style="italic">f(x)</text>
+                
+                <circle cx="${mapX(ptY)}" cy="${mapY(f(ptY))}" r="5" fill="#ef4444" />
+                <text x="${mapX(ptY) + 10}" y="${mapY(f(ptY)) - 10}" fill="#64748b" font-size="14" font-style="italic">f(y)</text>
+            `;
+        }
+
+        // Event Listeners
+        ptXInput.addEventListener('input', (e) => {
+            ptX = parseFloat(e.target.value);
+            render();
+        });
+
+        ptYInput.addEventListener('input', (e) => {
+            ptY = parseFloat(e.target.value);
+            render();
+        });
+
+        lambdaInput.addEventListener('input', (e) => {
+            lambda = parseFloat(e.target.value);
+            render();
+        });
+
+        // Initial render
+        render();
+    </script>
+</body>
+</html>
