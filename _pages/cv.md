@@ -40,7 +40,7 @@ Activities
 Publications/Presentations
 ======
 * **Surrogate Neural Architecture Codesign Package (SNAC-Pack)**, Dec. 2025, NeurIPS 2025 Machine Learning and the Physical Sciences Workshop
-  * Integrated framework that automates the discovery and optimization of neural networks focusing on FPGA deployment without requiring time-intensive synthesis. [https://openreview.net/pdf?id=8QGEy0t0EX](https://openreview.net/pdf?id=8QGEy0t0EX)
+  * Integrated framework that automates the discovery and optimization of neural networks focusing on FPGA deployment without requiring time-intensive synthesis. [https://arxiv.org/abs/2512.15998](https://arxiv.org/abs/2512.15998)
 * **wa-hls4ml: Benchmark and Surrogate Models for hls4ml Resource Estimation**, Nov. 2025, ACM Transactions on Reconfigurable Technology and Systems (TRETS)
   * Introduced a benchmark and dataset of over 680,000 synthesized neural networks to evaluate GNN- and transformer-based surrogate models predicting FPGA resource usage and latency. [https://dl.acm.org/doi/10.1145/3706628.3708827](https://dl.acm.org/doi/10.1145/3706628.3708827)
 * **Tutorial: Super Neural Architecture Codesign Package (SNAC-Pack)**, Sep. 2025, Fast Machine Learning for Science Conference 2025, ETH Zurich

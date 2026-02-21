@@ -9,6 +9,4 @@ paperurl: 'https://openreview.net/pdf?id=8QGEy0t0EX'
 ---
 SNAC-Pack is an integrated framework that automates the discovery and optimization of neural networks with a focus on FPGA deployment. By leveraging surrogate models, it eliminates the need for time-intensive synthesis during the neural architecture search process, enabling rapid exploration of the design space while maintaining accurate predictions of hardware performance metrics.
 
-[Download paper here](https://openreview.net/pdf?id=8QGEy0t0EX)
-
 [arXiv preprint](https://arxiv.org/abs/2512.15998)
