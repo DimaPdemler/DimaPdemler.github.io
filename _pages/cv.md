@@ -40,13 +40,13 @@ Activities
 Publications/Presentations
 ======
 * **Surrogate Neural Architecture Codesign Package (SNAC-Pack)**, Dec. 2025, NeurIPS 2025 Machine Learning and the Physical Sciences Workshop
-  * Integrated framework that automates the discovery and optimization of neural networks focusing on FPGA deployment without requiring time-intensive synthesis. [https://arxiv.org/abs/2512.15998](https://arxiv.org/abs/2512.15998)
+  * Integrated framework that automates the discovery and optimization of neural networks focusing on FPGA deployment without requiring time-intensive synthesis. [https://openreview.net/pdf?id=8QGEy0t0EX](https://openreview.net/pdf?id=8QGEy0t0EX)
 * **wa-hls4ml: Benchmark and Surrogate Models for hls4ml Resource Estimation**, Nov. 2025, ACM Transactions on Reconfigurable Technology and Systems (TRETS)
-  * Introduced a benchmark and dataset of over 680,000 synthesized neural networks to evaluate GNN- and transformer-based surrogate models predicting FPGA resource usage and latency. [https://arxiv.org/abs/2511.05615](https://arxiv.org/abs/2511.05615)
+  * Introduced a benchmark and dataset of over 680,000 synthesized neural networks to evaluate GNN- and transformer-based surrogate models predicting FPGA resource usage and latency. [https://dl.acm.org/doi/10.1145/3706628.3708827](https://dl.acm.org/doi/10.1145/3706628.3708827)
 * **Tutorial: Super Neural Architecture Codesign Package (SNAC-Pack)**, Sep. 2025, Fast Machine Learning for Science Conference 2025, ETH Zurich
   * Led a 1.5-hour hands-on tutorial guiding participants through the complete SNAC-Pack workflow, from dataset preparation to hardware deployment and optimization.
 * **Neural Architecture Codesign for Fast Physics Applications**, Jan. 2025, Machine Learning Science and Technology Journal
-  * Automated pipeline to streamline hardware-aware neural architecture codesign for low latency deployment in many scientific fields. [https://arxiv.org/abs/2501.05515](https://arxiv.org/abs/2501.05515)
+  * Automated pipeline to streamline hardware-aware neural architecture codesign for low latency deployment in many scientific fields. [https://iopscience.iop.org/article/10.1088/2632-2153/adede1](https://iopscience.iop.org/article/10.1088/2632-2153/adede1)
 * **Neural Architecture Codesign for Fast Bragg Peak Analysis**, Feb. 2024, 2024 AAAI Workshop on AI to Accelerate Science and Engineering, Vancouver, Canada
   * Automated pipeline to streamline neural architecture codesign for fast, real-time Bragg peak analysis in high-energy diffraction microscopy. [https://arxiv.org/abs/2312.05978](https://arxiv.org/abs/2312.05978)
 * **Fast ML Conference Lightning Talk & Poster**, Oct. 2024, Fast Machine Learning for Science Conference, West Lafayette, Indiana, USA
