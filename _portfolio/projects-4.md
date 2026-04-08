@@ -1,8 +1,10 @@
 ---
 title: "Vibration Isolation Stage"
-excerpt: "
-During my summer internship at the HYQU laboratory at ETH Zürich, I developed a stabilization system for a Cryostat Fabry-Perot interferometer experiment. This involved deriving differential equations for amplitude attenuation and designing an optimal system using pendulums, springs, and eddy current dampers. My role also included performing intricate physical calculations for heat dispersion and magnetic field derivation.<br/><img src='/images/eth.jpeg' style='width: 50%; max-width: 600px; height: auto;'>"
+excerpt: "During my summer internship at the HYQU laboratory at ETH Zürich, I developed a stabilization system for a Cryostat Fabry-Perot interferometer experiment. This involved deriving differential equations for amplitude attenuation and designing an optimal system using pendulums, springs, and eddy current dampers."
+header:
+  teaser: eth.jpeg
 collection: portfolio
+date: 2022-07-01
 redirect_from:
   - /projects/projects-4/
 ---

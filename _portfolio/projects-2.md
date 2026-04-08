@@ -1,7 +1,10 @@
 ---
 title: "Heavy Neutral Lepton Classification"
-excerpt: "Used transfer learning and lottery ticket hypothesis pruning to create an optimal heavy neutral lepton classification neural network. For this project I was part of the Excellence Research Internship Program at EPFL.<br/><img src='/images/HNL_image.png' style='width: 50%; max-width: 600px; height: auto;'>"
+excerpt: "Used transfer learning and lottery ticket hypothesis pruning to create an optimal heavy neutral lepton classification neural network. For this project I was part of the Excellence Research Internship Program at EPFL."
+header:
+  teaser: HNL_image.png
 collection: portfolio
+date: 2023-06-01
 redirect_from:
   - /projects/projects-2/
 ---

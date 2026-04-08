@@ -1,8 +1,10 @@
 ---
 title: "Car Racing Reinforcement Learning"
-excerpt: "
-Explored Reinforcement Learning techniques to optimize virtual car racing performance in the Gymnasium CarRacing environment. Employed Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) models, enhanced with reward augmentations, demonstrating the impact of architectural choices and training methodologies on achieving high-speed, stable racing behavior.<br/><img src='/images/RL_gif.gif' style='width: 50%; max-width: 600px; height: auto;'>"
+excerpt: "Explored Reinforcement Learning techniques to optimize virtual car racing performance in the Gymnasium CarRacing environment. Employed Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) models, enhanced with reward augmentations, demonstrating the impact of architectural choices and training methodologies on achieving high-speed, stable racing behavior."
+header:
+  teaser: RL_gif.gif
 collection: portfolio
+date: 2024-01-01
 redirect_from:
   - /projects/projects-3/
 ---

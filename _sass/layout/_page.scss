@@ -8,6 +8,7 @@
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
+  overflow-x: hidden;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
@@ -98,6 +99,24 @@
 
   .small {
     font-size: $type-size-6;
+  }
+
+  /* Mobile: reduce indentation and prevent horizontal overflow */
+  @media (max-width: 600px) {
+    ul, ol {
+      padding-left: 1em;
+    }
+
+    li > ul,
+    li > ol {
+      padding-left: 0.75em;
+    }
+
+    /* Break long URLs and strings instead of overflowing */
+    a, p, li {
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
   }
 
   /* blockquote citations */
@@ -398,4 +417,87 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+   Fun page
+   ========================================================================== */
+
+.fun-activities {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  margin-bottom: 2.5em;
+}
+
+.fun-activity {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1em 1.25em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 10px;
+  background: var(--global-bg-color);
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .fun-activity__icon {
+    font-size: 1.75em;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 0.1em;
+  }
+
+  .fun-activity__body {
+    h3 {
+      margin: 0 0 0.3em;
+      font-size: $type-size-5;
+    }
+
+    p {
+      margin: 0;
+      font-size: $type-size-6;
+      color: var(--global-text-color-muted);
+      line-height: 1.6;
+    }
+  }
+}
+
+.fun-photos {
+  h3 {
+    margin-bottom: 0.75em;
+    font-size: $type-size-5;
+  }
+}
+
+.fun-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1em;
+}
+
+.fun-photo {
+  margin: 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 10px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  figcaption {
+    padding: 0.5em 0.75em;
+    font-size: $type-size-7;
+    color: var(--global-text-color-muted);
+    text-align: center;
+  }
 }
