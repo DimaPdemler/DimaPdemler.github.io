@@ -4,7 +4,7 @@ excerpt: "Explored Reinforcement Learning techniques to optimize virtual car rac
 header:
   teaser: RL_gif.gif
 collection: portfolio
-date: 2024-01-01
+date: 2024-04-01
 redirect_from:
   - /projects/projects-3/
 ---

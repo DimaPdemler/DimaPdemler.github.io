@@ -10,7 +10,7 @@ redirect_from:
 
 I am a recent graduate of UC San Diego getting a bachellors degree in Computational Physics and a minor in Mathematics. I have a strong interest in the intersection of physics/mathematics and machine learning. My goal is to develop efficient machine learning models rooted in the underlying physical and mathematical principles the govern the world and their task.
 
-I am currently taking a gap year in Zurich Switzerland, studying Datascience at ETH Zurich before starting my PhD the following year at Yale University in Elecrical & Computer Engineering.
+I am currently studying for my Master's in Data Science at ETH Zurich in Switzerland.
 
 I am interested in model compression, efficient deep learning, and the application of machine learning to scientific problems. I work on Quantization Aware training, pruning, and knowledge distillation to create efficient deep learning models.
 

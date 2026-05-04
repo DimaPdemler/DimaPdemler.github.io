@@ -7,6 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+<p>
+  These are personal and coursework projects I've worked on outside of formal publications. For peer-reviewed research, see the <a href="{{ base_path }}/publications/">Publications</a> page.
+</p>
+
 <div class="portfolio-grid">
 {% assign sorted_portfolio = site.portfolio | sort: "date" | reverse %}
 {% for post in sorted_portfolio %}

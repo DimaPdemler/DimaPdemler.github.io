@@ -11,9 +11,8 @@ redirect_from:
 
 Education
 ======
-* **PhD. Candidate in Electrical and Computer Engineering**, Yale University, Sept. 2026 Onwards
-  * New Haven, CT
-  * Working with Professor Boris Landa
+* **M.S. in Data Science**, ETH Zurich, Sept. 2025 - present
+  * Zurich, Switzerland
 * **B.S. in Computational Physics with High Honors**, University of California San Diego, May 2025
   * GPA: 3.9/4.0, San Diego, CA
   * Relevant Coursework:
@@ -54,7 +53,6 @@ Publications/Presentations
 Awards/Recognitions
 ======
 * **UC San Diego Physical Sciences Dean's Undergraduate Award for Excellence**, Mar 2025, UC San Diego, San Diego, CA
-* **Sheffield Fellow**, Sept 2025, Yale University, New Haven, CT
 * **Hackathon Winner** for "Model Performance" and "Best Judged Model", Jan 2025, Climate Event Identification NSF HDR ML Challenge Hackathon, San Diego, CA
 * **Chair's Challenge Award**, Oct 2024, UC San Diego Physics, San Diego, CA
 * **Physics Honors Program**, Apr. 2024 - present, UC San Diego, San Diego, CA
@@ -76,11 +74,11 @@ Additional Projects
   * DC-powered lamp that moves along a table, uses computer vision to detect notebooks, stops, and turns the light until notebook is no longer detected
   * The lamp uses a Raspberry Pi and a Tensorflow Lite custom trained machine learning model. Designed and 3D printed all the parts of the lamp
   * More info can be seen [in this video link](https://youtu.be/8-hrm-s7x8I)
-* **SQUID Effect Derivation from Maxwell's Equations**, Spring 2024, UC San Diego, San Diego, CA
+* **SQUID Effect Derivation from Maxwell's Equations**, Feb. 2024, UC San Diego, San Diego, CA
   * Derived the key equations underlying a Superconducting Quantum Interference Device (SQUID) starting from the most fundamental laws: Maxwell's and Schrodinger's Equations
   * Derivations were simplified to an undergraduate level from advanced graduate textbooks that cover this topic
   * The derivation paper can be viewed [here (PDF)](https://dimapdemler.github.io/files/100C_Final_Project_SQUIDS.pdf)
-* **Car Racing Simulation using Reinforcement Learning**, Winter 2024, UC San Diego, San Diego, CA
+* **Car Racing Simulation using Reinforcement Learning**, Apr. 2024, UC San Diego, San Diego, CA
   * Applied Deep-Q Networks (DQN) and Proximal Policy Optimization (PPO) models to optimize performance in the OpenAI Car Racing game environment
   * Explored reward augmentation strategies like grass detection, speed rewards, and acceleration rewards to enhance training efficiency and model performance
   * View the [presentation](https://docs.google.com/presentation/d/1YEaGoZ3cp6BxNUZlnJlXEICEvybqQQN9glTS4dv-b2U/edit?usp=sharing) and [detailed paper](https://dimapdemler.github.io/files/CSE_251B_Final_Project_Project.pdf)
