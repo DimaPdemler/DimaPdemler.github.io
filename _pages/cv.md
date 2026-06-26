@@ -70,7 +70,7 @@ Skills and Interests
 
 Additional Projects
 ======
-* **Chess Review MCP — AI Chess Coach**, 2026
+* **Chess Review MCP: AI Chess Coach**, 2026
   * Built an AI chess coach that reviews any game (Lichess, Chess.com, or any PGN) with Stockfish and explains each mistake in plain words, grounded in real engine lines rather than guesses
   * Runs both as an MCP server inside Claude Code and as an interactive web board with an eval bar, win graph, move arrows, and an in-browser AI coach; cross-game history rolls up into a per-player coaching profile
   * Open source (MIT). See the [project website](https://chess-analysis-mcp.github.io/tintins-chess-analysis/) and the [GitHub repository](https://github.com/Chess-analysis-mcp/tintins-chess-analysis)
