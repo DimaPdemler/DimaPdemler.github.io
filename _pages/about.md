@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a recent graduate of UC San Diego getting a bachellors degree in Computational Physics and a minor in Mathematics. I have a strong interest in the intersection of physics/mathematics and machine learning. My goal is to develop efficient machine learning models rooted in the underlying physical and mathematical principles the govern the world and their task.
+I am a Master's student in Data Science at ETH Zurich, where I focus on efficient machine learning for scientific computing. I previously earned a B.S. in Computational Physics with a minor in Mathematics from UC San Diego.
 
-I am currently studying for my Master's in Data Science at ETH Zurich in Switzerland.
+I work at the intersection of physics, mathematics, and machine learning. My goal is to build efficient machine learning models grounded in the physical and mathematical principles that govern both the world and the tasks they are designed to solve.
 
-I am interested in model compression, efficient deep learning, and the application of machine learning to scientific problems. I work on Quantization Aware training, pruning, and knowledge distillation to create efficient deep learning models.
+My research centers on model compression and efficient deep learning for scientific problems. I work on quantization-aware training, pruning, and knowledge distillation to make deep learning models faster and lighter without sacrificing performance.
 
 <!-- I have been fortunate to have worked with many insigthful and insipiring mentors. Over the past few years I have worked with Professor [Javier Duarte](https://jduarte.physics.ucsd.edu/) and [Nhan Tran](https://cms.fnal.gov/nhan-tran/), focusing on optimizing neural networks for nanosecond timescales using FPGAs. Our work involves creating a Neural Architecture Codesign (NAC) pipeline that automates the discovery and optimization of efficient machine learning models for scientific and engineering applications. More recently, we have worked on a surrogate model to predict FPGA latency times for ML models synthesized to FPGA chips.  -->
 
